@@ -28,36 +28,42 @@ The journey of a chip from software to silicon begins with compiling C applicati
 ## 🔑 Key Takeaways  
 
 - Learned the **big-picture flow of SoC design**: from high-level C apps down to silicon.  
-- Understood how **firmware, RTL, analog, and verification** connect in a real project.  
+- Understood how **firmware, RTL, analog, and verification** connect in a real project.
 
 ---
-# 🔧 Task 2 – Tools Installation & Environment Setup  
+# 🔧 Task 2 – Tools Installation & Environment Setup
 
-To begin the RISC-V SoC design journey, the first step was to set up a **virtualized Linux environment** and install the essential open-source EDA tools. This ensures a stable workspace for **synthesis, simulation, and waveform analysis** throughout the program.  
-
----
-
-## 🖥️ Virtual Machine Setup  
-
-A Virtual Machine (VM) was configured using **Oracle VirtualBox**:  
-
-🔗 [Download VirtualBox](https://www.virtualbox.org/wiki/Downloads)  
-
-System Requirements
-:6 GB RAM
-:50 GB HDD
-:Ubuntu 20.04 or higher
-:4 vCPU
-💡 *This setup provides sufficient resources for running open-source tools smoothly without performance bottlenecks.*  
+To begin the RISC-V SoC design journey, the first step was to set up a **virtualized Linux environment** and install the essential open-source EDA tools. This ensures a stable workspace for **synthesis, simulation, and waveform analysis** throughout the program.
 
 ---
 
-## ⚙️ Tool Installation & Verification  
+## 🖥️ Virtual Machine Setup
 
-The following open-source tools were installed successfully:  
+A Virtual Machine (VM) was configured using **Oracle VirtualBox**:
 
-### 🔹 1. Yosys – RTL Synthesis Tool  
-**Purpose:** Converts RTL code into gate-level representations.  
+🔗 [Download VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+
+| Specification       | Details        |
+|--------------------|----------------|
+| Operating System    | Ubuntu 20.04+  |
+| RAM                 | 6 GB           |
+| Storage             | 50 GB HDD      |
+| vCPUs               | 4              |
+
+💡 *This setup provides sufficient resources for running open-source tools smoothly.*
+
+---
+
+## ⚙️ Tools Installation & Verification
+
+The following open-source tools were installed successfully:
+
+---
+
+🔹 1. Yosys – RTL Synthesis Tool
+
+Purpose: Converts RTL code into gate-level representations.
+
 
 **Installation Commands:**  
 ```bash
@@ -72,3 +78,50 @@ sudo apt-get install build-essential clang bison flex \
 git submodule update --init --recursive
 make
 sudo make install
+```
+## 📷 **Installation Verification**
+![Yosys Installation Screenshot](images/yosys_install.png)
+
+</div>
+
+---
+🔹 2. Icarus Verilog – Verilog Simulator
+
+Purpose: Compiles and simulates Verilog designs for functional verification.
+**Installation Commands:**  
+```bash
+sudo apt-get update
+sudo apt-get install iverilog
+
+# Verify Icarus Verilog
+iverilog -V
+
+```
+## 📷 **Installation Verification**
+![Icarus Verilog Installation Screenshot](images/iverilog_install.png)
+
+</div>
+
+---
+🔹 3. GTKWave – Waveform Viewer
+
+Purpose: Visualizes simulation output (VCD/FST waveforms).
+**Installation Commands:**  
+```bash
+sudo apt-get update
+sudo apt-get install gtkwave
+
+# Verify GTKWave
+gtkwave --version
+
+
+```
+## 📷 **Installation Verification**
+![GTKWave Installation Screenshot](images/gtkwave_install.png)
+
+</div>
+
+---
+📌 With these tools installed (Yosys, Icarus Verilog, GTKWave), the environment is now ready for RTL design, synthesis, simulation, and waveform analysis.
+
+
