@@ -1,10 +1,9 @@
 # 🖥️ RISC-V SoC Tapeout Journey – VSD Program
 
-This program provides **end-to-end exposure of Synopsys VCS → Design Compiler → Sign-off → Fab**.  
 Welcome to my documentation of the **RISC-V SoC Tapeout Program VSD**!  
 This repository captures my weekly progress as I complete various tasks, from RTL design to GDSII generation, using open-source EDA tools.
-
-> This program provides hands-on experience in designing a System-on-Chip (SoC) as part of India’s largest collaborative RISC-V tapeout initiative.  
+> This program provides **end-to-end exposure of Synopsys VCS → Design Compiler → Sign-off → Fab**.  
+> provides hands-on experience in designing a System-on-Chip (SoC) as part of India’s largest collaborative RISC-V tapeout initiative.  
 > With 3500+ participants, this program aims to empower the next generation of engineers to contribute to the nation’s semiconductor ecosystem.
 
 ---
@@ -16,9 +15,8 @@ This repository captures my weekly progress as I complete various tasks, from RT
 | Task 0 | 🛠️ Installation of Open-Source EDA Tools: Iverilog, Yosys, GTKWave | ✅ Completed |
 
 ### ✨ Highlights from Week 0
-- Got to know about **digital design with VLSI SoC design and planning**.  
+- Got to know about **digital design  VLSI SoC design and planning**.  
 - Successfully installed and verified key open-source EDA tools.  
-- Learned the foundational setup for RTL simulation, synthesis, and waveform visualization.  
 - Created a ready-to-use environment for upcoming tasks in the RTL → GDSII workflow.
 
 ---
